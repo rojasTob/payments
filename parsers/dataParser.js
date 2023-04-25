@@ -1,5 +1,5 @@
-import { isValidDay, isValidTimeRange } from '../utils/validators';
-import { transformToMinutes, transformRangeToHours } from '../utils/timeOperations';
+import { isValidDay, isValidTimeRange } from '../utils/validators.js';
+import { transformToMinutes, transformRangeToHours } from '../utils/timeOperations.js';
 
 export function getEmployeeData(line){
     const employeeData = line.split('=');

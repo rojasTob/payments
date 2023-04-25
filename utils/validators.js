@@ -1,4 +1,4 @@
-import { transformToMinutes } from './timeOperations';
+import { transformToMinutes } from './timeOperations.js';
 
 const daysAbbreviation = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'];
 
