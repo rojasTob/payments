@@ -12,5 +12,5 @@ export function calculateAmount(lineFromFile){
 
     const totalAmount = workEntries.reduce((total, entry) => total + (entry.workedHours * entry.valuePerHour), 0);
 
-    return `The amount to pay ${employeeData.name} is: ${totalAmount} USD`;
+    return `The amount to pay ${employeeData.name} is: ${totalAmount.toFixed(2)} USD`;
 }
