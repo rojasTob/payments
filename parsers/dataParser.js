@@ -19,6 +19,6 @@ export function getTimeWorkedData(timeWorked){
             const workedHours = transformRangeToHours(endTime, startTime);
             return { day: day, startInMinutes: startTime, endInMinutes: endTime, workedHours: workedHours };
         }
-        return { day: day, startInMinutes: 0, endInMinutes: 0, workedHours: 0, error: `Please, check this entry: ${data}` };
+        return { day: day, startInMinutes: 0, endInMinutes: 0, workedHours: 0, error: data };
     });
 }
