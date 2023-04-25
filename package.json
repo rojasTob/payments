@@ -1,0 +1,16 @@
+{
+  "name": "payments",
+  "version": "1.0.0",
+  "description": "Console app that calculates the employe's payment",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Angie Rojas",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.21.2",
+    "jest": "^29.5.0"
+  }
+}
