@@ -6,7 +6,7 @@ This is a console app that reads and gets information from a .txt file to proces
 
 The approach is to work with minutes. So, the unit time used in the app is minutes, for that reason the table and the worked hours information are transformed into minutes. 
 After reading the .txt file, the information is parsed with two functions to extract and separate the employee's name, day, and worked time. 
-Then, the parsed information is used by the payment process to calculate and get the values. In the process payment, I considered the range of the worked time, because it could be part of two or three ranges in the table. To solve this I separate the worked time into three timeframes and calculate the minutes for each one, then sum all the three timeframes to get the total amount for the employee.
+Then, the parsed information is used by the payment process to calculate and get the values. In the process payment, I considered the range of the worked time, because it could be part of two or three ranges in the table. To solve this I separate the worked time into three timeframes and calculate the minutes for each one, then sum all the three timeframes to get the total amount for the employee. If an employee entry has an error in the worked hours, it won't show any result, it will show the error instead.
 
 ## Architecture
 
