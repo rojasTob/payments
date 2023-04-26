@@ -12,12 +12,17 @@ Then, the parsed information is used by the payment process to calculate and get
 
 The payments app uses NodeJs and Jest and the structure is:
 
-**/config** Contains the constants.js which has the table information in minutes and the days information.
-**/utils** Contains validator.js which helps to identify if a worked time format is correct or not, and timeOperations.js which transforms a hh:mm format to minutes.
-**/parsers** Contains the dataParser.js which transform a line of the employees.txt file extracting the name and the time worked information.
-**/controllers** Contains the calculator.js which has the processPayment function that allow to calculate the total amount to pay.
-**/data** It has the employees.txt file that has all the inputs to be processed. This is the input for the app.
-**app.js** This is start the application and read the employees.txt file and process the file line by line.
+|**/config** |Contains the constants.js which has the table information in minutes and the days information.|
+
+|**/utils** |Contains validator.js which helps to identify if a worked time format is correct or not, and timeOperations.js which transforms a hh:mm format to minutes.|
+
+|**/parsers** |Contains the dataParser.js which transform a line of the employees.txt file extracting the name and the time worked information.|
+
+|**/controllers** |Contains the calculator.js which has the processPayment function that allow to calculate the total amount to pay.|
+
+|**/data** |It has the employees.txt file that has all the inputs to be processed. This is the input for the app.|
+
+|**app.js** |This is start the application and read the employees.txt file and process the file line by line.|
 
 ## Tests
 
