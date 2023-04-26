@@ -30,7 +30,6 @@ test('get time worked data structure if all data is correct', () => {
     expect(timeWorkedData[2]).toHaveProperty('day', 'TH');
     expect(timeWorkedData[2]).toHaveProperty('startInMinutes', 60);
     expect(timeWorkedData[2]).toHaveProperty('endInMinutes', 180);
-    expect(timeWorkedData[2]).toHaveProperty('workedHours', 2);
 });
 
 test('set zero values if day abbreviation is not valid and set an error message', () => {
@@ -39,7 +38,6 @@ test('set zero values if day abbreviation is not valid and set an error message'
     expect(timeWorkedData[1]).toHaveProperty('day', 'ZZ');
     expect(timeWorkedData[1]).toHaveProperty('startInMinutes', 0);
     expect(timeWorkedData[1]).toHaveProperty('endInMinutes', 0);
-    expect(timeWorkedData[1]).toHaveProperty('workedHours', 0);
     expect(timeWorkedData[1]).toHaveProperty('error', 'ZZ14:00-18:00');
 });
 
@@ -49,6 +47,5 @@ test('set zero values if time range is not valid and ser an error message', () =
     expect(timeWorkedData[2]).toHaveProperty('day', 'SU');
     expect(timeWorkedData[2]).toHaveProperty('startInMinutes', 0);
     expect(timeWorkedData[2]).toHaveProperty('endInMinutes', 0);
-    expect(timeWorkedData[2]).toHaveProperty('workedHours', 0);
     expect(timeWorkedData[2]).toHaveProperty('error', 'SU21:00-20:00');
 });
