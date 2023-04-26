@@ -1,6 +1,6 @@
 import { transformToMinutes } from './timeOperations.js';
+import { daysAbbreviation } from '../config/constants.js';
 
-const daysAbbreviation = ['MO', 'TU', 'WE', 'TH', 'FR', 'SA', 'SU'];
 
 export function isValidDay(day){
     return daysAbbreviation.includes(day);
