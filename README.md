@@ -10,7 +10,7 @@ Then, the parsed information is used by the payment process to calculate and get
 
 ## Architecture
 
-The payments app uses NodeJs and Jest and the structure is:
+The payments app uses NodeJs v18.10.0 and Jest and the structure is:
 
 ||description|
 | ------ | ------ |
@@ -37,5 +37,5 @@ npm install
 2. In the /data folder you can find the employees.txt with some entries, you can use this file or modify it with other information.
 3. To run the app execute the following, the app will display the results in the console. 
 ```
-node app.js. 
+npm start 
 ```
